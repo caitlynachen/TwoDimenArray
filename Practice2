@@ -1,0 +1,24 @@
+package jrJava.twoDimenArray;
+
+import java.util.ArrayList;
+
+public class Practice2 {
+
+	public static void main(String[] args) {
+		ArrayList<int[]> masterList = new ArrayList<int[]>(); 
+
+		
+		for(int i=0; i<10; i++){
+			int[]array = new int[i];
+			for(int j=0; j<i; j++){
+				array[j] = i*10+j;
+				
+			}
+			
+			masterList.add(array);
+		}
+		
+		System.out.println(masterList.get(2)[1]);
+	}
+
+}
